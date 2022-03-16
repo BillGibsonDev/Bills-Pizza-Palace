@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 
-import { getMenu, getMenuItem, createItem } from 'controller.js';
+import { getMenu, getMenuItem, createItem } from './controller.js';
 
 const router = express.Router();
 
