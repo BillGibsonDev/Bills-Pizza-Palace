@@ -13,3 +13,5 @@ router.get(`/menu/:id`, getMenuItem);
 
 // create
 router.post(`/${process.env.NODE_ENV_CREATE_ITEM_URL}`, createItem);
+
+export default router;
