@@ -12,7 +12,7 @@ app.use(cors());
 
 import routes from './routes.js';
 
-const host = process.env.HOST || '0.0.0.0.0';
+const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
 
 
