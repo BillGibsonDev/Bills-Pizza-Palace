@@ -7,12 +7,9 @@ const ItemSchema = new mongoose.Schema({
     title: {
         type: String,
     },
-    thumbnail: {
+    image: {
         type: String,
     },
-    images:[{
-        image: String,
-    }],
     type: {
         type: String,
     }

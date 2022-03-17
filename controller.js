@@ -1,13 +1,9 @@
-import express from 'express';
-import mongoose from 'mongoose';
 import { ItemModel } from './ItemModel.js';
 
-const router = express.Router();
-
 export const createItem = async ( req, res ) => {
-    const { images, thumbnail, title, price, description, type } = req.body
+    const { image, title, price, description, type } = req.body
 
-    const newItem = new ItemModel({ images, thumbnail, title, price, description, type })
+    const newItem = new ItemModel({ image, title, price, description, type })
     try {
         await newItem.save();
 
